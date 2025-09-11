@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Example</title>
+  <style>
+    .circle {
+      width: 150px;          /* width */
+      height: 150px;         /* height (same as width = perfect circle) */
+      background-color: red;
+      border-radius: 50%;    /* makes it a circle */
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;  /* left side invisible */
+      border-right: 50px solid transparent; /* right side invisible */
+      border-top: 0;
+      border-bottom: 100px solid rgb(122, 10, 103);    /* visible bottom side */
+    }
+
+    .diamond {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      transform: rotate(45deg);   /* rotate the square */
+      margin: 50px;
+    }
+
+    .square {
+      width: 150px;             /* equal width */
+      height: 150px;            /* equal height */
+      background-color: teal;   /* fill color */
+    }
+     .rectangle {
+      width: 200px;             /* wider */
+      height: 100px;            /* shorter */
+      background-color: coral;  /* fill color */
+    }
+    .container{display:flex;
+             flex-direction:column;
+             justify-content:center;
+             align-items:center;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+  <div class="circle"></div>
+  <div class="triangle"></div>
+  <div class="diamond"></div>
+  <div class="square"></div>
+  <br>
+  <div class="rectangle"></div>
+  </div>
+</body>
+</html>

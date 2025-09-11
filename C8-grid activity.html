@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam website grid example</title>
+    <style>
+  body {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh;       /* full viewport height */
+  margin: 0;
+  flex-direction: column;  /* stack items vertically */
+  background-color: aliceblue;
+}
+.grid-container {
+  display: grid;
+  width:1200px;
+  height:1000px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: dodgerblue;
+  padding: 30px;
+  grid-column-gap:10px;
+  border:20px solid goldenrod
+  
+}
+
+.grid-container > div {
+  background-color: #dbdbdb;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+  border:9px solid purple;
+  background-image: url(https://cdna.artstation.com/p/assets/images/images/044/879/178/large/shusei-sasaya-ta-v27.jpg?1641389447);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.item2 {
+  grid-row: 2 / span 3;
+  margin-right:70px;
+  border:9px solid green;
+   background-image: url(https://tse2.mm.bing.net/th/id/OIP.WdczEKC3Cr1sIgBQ2v0yOwHaNK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.item3 {
+  grid-column:2;
+  grid-row:2;
+  border:9px solid darkblue;
+  background-image: url(https://wallpapercave.com/wp/wp11818274.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.item4 {
+ grid-row: 2 / span 3;
+ grid-column:3;
+ margin-left: 70px;
+ border:9px solid black;
+   background-image: url(https://w0.peakpx.com/wallpaper/719/71/HD-wallpaper-taj-mahal-candles-sunset.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.item5 {
+  grid-column:2;
+  grid-row:3;
+  position:relative;
+  top:9px;
+  border:9px solid darkblue;
+   background-image: url(https://as2.ftcdn.net/v2/jpg/00/99/13/71/1000_F_99137198_KYmocF29Y42HkhuDaYfU7ZOFY1phjgGt.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.circle {
+  display: inline-block;
+  width: 40px;            /* circle size */
+  height: 40px;
+  line-height: 40px;      /* centers number vertically */
+  border-radius: 50%;     /* makes it round */
+  background-color: red;  /* circle color */
+  color: white;           /* text color */
+  text-align: center;     /* centers number horizontally */
+  font-weight: bold;
+  opacity: 0.5;
+}
+h1{display:flex;
+     justify-content: center;
+     align-items: center;
+}
+p{display:flex;
+     justify-content: center;
+     align-items: center;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-row Property</h1>
+
+<p>The <em>grid-row</em> property is a shorthand property for the <em>grid-row-start</em> and the 
+<em>grid-row-end</em> properties.</p>
+
+<p>Place the first grid item at row-line 1, and let it span 2 rows:</p>
+
+<div class="grid-container">
+  <div class="item1"><span class="circle">1</span></div>
+  <div class="item2"><span class="circle">2</span></div>
+  <div class="item3"><span class="circle">3</span></div>  
+  <div class="item4"><span class="circle">4</span></div>
+  <div class="item5"><span class="circle">5</span></div>
+   
+</div>
+
+</body>
+</html>
