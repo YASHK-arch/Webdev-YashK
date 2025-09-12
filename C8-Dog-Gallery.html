@@ -45,6 +45,45 @@
              border-radius: 8px;
         }
      .heading{text-align:center;}
+
+     @media(min-width: 768px) and (max-width: 1031px) {
+         .container{
+                    display:grid;
+                    /*flex-direction: column;*/
+                    /*flex-wrap:wrap;*/
+                    grid-template-columns: repeat(3,1fr);
+                    margin:auto;
+                    grid-row-gap:9px;
+                    grid-column-gap:0px;
+                    background-color:blanchedalmond;
+                    border: 2px dashed black;
+                    padding:20px;
+                    padding-left: 47px;
+                    height:auto;
+                    width:auto;          
+     }
+    
+    
+    }
+
+     @media(max-width:767px){
+         .container{
+                    display:grid;
+                    /*flex-direction: column;*/
+                    /*flex-wrap:wrap;*/
+                    grid-template-columns: repeat(2,1fr);
+                    margin:auto;
+                    grid-row-gap:9px;
+                    grid-column-gap:0px;
+                    background-color:blanchedalmond;
+                    border: 2px dashed black;
+                    padding:20px;
+                    padding-left: 50px;
+                    height:auto;
+                    width:auto; 
+     }
+
+     
     </style>
 </head>
 <body>
