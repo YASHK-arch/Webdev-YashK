@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolve Around</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+    }
+
+    .center {
+      width: 50px;
+      height: 50px;
+      background: rgb(51, 141, 215);
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .orbit {
+      width: 200px;
+      height: 200px;
+      /* just to show orbit */
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: spin 6s linear infinite;
+    }
+
+    .planet {
+      width: 30px;
+      height: 30px;
+      background: rgb(209, 227, 233);
+      border-radius: 50%;
+      position: absolute;
+      top: -70px;  
+      left: 50%;
+      box-shadow:0px 0px 30px white;
+      transform: translateX(-50%);
+    }
+
+    @keyframes spin {
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center"></div>
+  <div class="orbit">
+    <div class="planet"></div>
+  </div>
+</body>
+</html>
